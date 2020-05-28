@@ -6,5 +6,4 @@ module.exports = {
     ]
   },
   title: "wdwiramadhan",
-  description: "My Personal Site"
 };

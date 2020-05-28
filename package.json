@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "docs:dev": "vuepress dev docs",
-    "docs:build": "vuepress build doc"
+    "docs:build": "vuepress build docs"
   },
   "author": "wdwiramadhan",
   "license": "ISC",

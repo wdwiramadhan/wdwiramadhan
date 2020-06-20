@@ -14,7 +14,9 @@ export default function Posts({ allPosts }) {
           <title>wdwiramadhan</title>
         </Head>
         <Header />
-        {morePosts.length > 0 && <AllPosts posts={morePosts} />}
+        <Container>
+          {morePosts.length > 0 && <AllPosts posts={morePosts} />}
+        </Container>
       </Layout>
     </>
   )

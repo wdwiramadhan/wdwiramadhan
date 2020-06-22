@@ -1,11 +1,11 @@
 import DateFormater from '../components/date-formater'
 import CoverImage from '../components/cover-image'
 
-export default function PostHeader({ title, coverImage, date, author }) {
+export default function PostHeader({ title, coverImage, date }) {
   return (
     <>
       <div className="max-w-3xl mx-auto">
-        <h1 className="text-xl md:text-2xl leading-relaxed lg:text-3xl font-bold text-gray-900">
+        <h1 className="text-xl md:text-2xl leading-relaxed lg:text-3xl font-bold text-gray-800">
           {title}
         </h1>
         <div className="mb-6 text-md text-gray-600">

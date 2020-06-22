@@ -7,7 +7,7 @@ export default function Posts({ posts }) {
       <div className="max-w-3xl mx-auto">
         {posts.map((post) => (
           <div key={post.title}>
-            <h3 className="md:text-2xl text-xl leading-relaxed lg:text-3xl font-bold text-gray-900">
+            <h3 className="md:text-2xl text-xl leading-relaxed lg:text-3xl font-bold text-blue-500">
               <Link as={`/post/${post.slug}`} href="/post/[slug]">
                 <a className="hover:underline">{post.title}</a>
               </Link>

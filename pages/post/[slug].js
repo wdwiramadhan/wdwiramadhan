@@ -9,7 +9,7 @@ import { getPostBySlug, getAllPosts } from '../../lib/api'
 import Head from 'next/head'
 import markdownToHtml from '../../lib/markdownToHtml'
 
-export default function Post({ post, morePosts, preview }) {
+export default function Post({ post, preview }) {
   const router = useRouter()
   if (!router.isFallback && !post?.slug) {
     return <ErrorPage statusCode={404} />
@@ -33,7 +33,6 @@ export default function Post({ post, morePosts, preview }) {
                 title={post.title}
                 coverImage={post.coverImage}
                 date={post.date}
-                author={post.author}
               />
               <PostBody content={post.content} />
             </article>
@@ -49,7 +48,6 @@ export async function getStaticProps({ params }) {
     'title',
     'date',
     'slug',
-    'author',
     'content',
     'ogImage',
     'coverImage',

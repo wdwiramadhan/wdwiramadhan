@@ -5,7 +5,7 @@ export default function PostHeader({ title, coverImage, date }) {
   return (
     <>
       <div className="max-w-3xl mx-auto">
-        <h1 className="text-xl md:text-2xl leading-relaxed lg:text-3xl font-bold text-gray-800">
+        <h1 className="text-xl md:text-2xl leading-relaxed lg:text-3xl font-bold text-gray-700">
           {title}
         </h1>
         <div className="mb-6 text-md text-gray-600">

@@ -8,6 +8,7 @@ import Layout from '../../components/layout'
 import { getPostBySlug, getAllPosts } from '../../lib/api'
 import Head from 'next/head'
 import markdownToHtml from '../../lib/markdownToHtml'
+import Comment from '../../components/comment'
 
 export default function Post({ post, preview }) {
   const router = useRouter()
@@ -22,7 +23,7 @@ export default function Post({ post, preview }) {
          ' '
         ) : (
           <>
-            <article className="mb-32">
+            <article className="mb-16">
               <Head>
                 <title>
                   {post.title} 
@@ -38,6 +39,7 @@ export default function Post({ post, preview }) {
             </article>
           </>
         )}
+        <Comment slug={post.slug} title={post.title}/>
       </Container>
     </Layout>
   )

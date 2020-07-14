@@ -6,7 +6,6 @@ import { getAllPosts } from '../lib/api'
 import Head from 'next/head'
 
 export default function Posts({ allPosts }) {
-  const morePosts = allPosts.slice(1)
   return (
     <>
       <Layout>
@@ -15,7 +14,7 @@ export default function Posts({ allPosts }) {
         </Head>
         <Header />
         <Container>
-          {morePosts.length > 0 && <AllPosts posts={morePosts} />}
+          {allPosts.length > 0 && <AllPosts posts={allPosts} />}
         </Container>
       </Layout>
     </>

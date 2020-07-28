@@ -9,7 +9,7 @@ const Socmed = () => {
   ]
   return(
     <>
-    <div className="flex flex-row mt-10 justify-center">
+    <div className="flex flex-row mt-8 justify-center">
       {socmeds.map(socmed => <a href={socmed.url} className="sm:w-1/12 w-1/6 p-2 text-gray-700 hover:text-blue-500"  target="_blank" rel="noreferrer" aria-label="sosmedlink" key={socmed.name}><FontAwesomeIcon icon={socmed.icon} /></a>)}
     </div>
     </>

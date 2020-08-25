@@ -14,7 +14,7 @@ export default function Index() {
           <section className="flex flex-col mx-auto max-w-2xl mt-12">
             <div className="flex flex-row">
               <img src="./assets/profile.jpg" alt="profile picture" className="rounded-full max-w-avatar" />
-              <div className="text-xl leading-relaxed text-gray-700 px-5 my-auto">wdwiramadhan</div>  
+              <div className="text-xl text-gray-700 px-5 my-auto">wdwiramadhan</div>  
             </div>
             <div className="rounded-md overflow-hidden shadow-md md:px-6 md:py-8 px-4 py-6 mt-6">
               <p className="text-2xl font-bold text-gray-700">Wahyu Dwi Ramadhan</p> 
@@ -24,7 +24,7 @@ export default function Index() {
           </section>
           <section className="flex flex-col mx-auto max-w-2xl mt-20">
             <div>
-              <div className="text-xl leading-relaxed text-gray-700">Projects</div>  
+              <div className="text-lg text-gray-700">Projects</div>  
             </div>
             <div className="rounded-md overflow-hidden shadow-md md:px-6 md:py-8 px-4 py-6 mt-6">
               <p className="text-2xl font-bold text-gray-700">Coming Soon</p>
@@ -32,7 +32,7 @@ export default function Index() {
           </section>
           <section className="flex flex-col mx-auto max-w-2xl mt-20">
             <div>
-              <div className="text-xl leading-relaxed text-gray-700">Articles</div>  
+              <div className="text-lg text-gray-700">Articles</div>  
             </div>
             <div className="rounded-md overflow-hidden shadow-md md:px-6 md:py-8 px-4 py-6 mt-6">
               <p className="text-2xl font-bold text-gray-700">Coming Soon</p>

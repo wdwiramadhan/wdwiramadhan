@@ -1,6 +1,10 @@
-import Footer from '../components/footer'
-import Meta from '../components/meta'
+import Footer from "./footer";
+import Meta from "./meta";
+import { ReactNode } from "react";
 
+type Props = {
+  children?: ReactNode;
+};
 export default function Layout({ children }) {
   return (
     <>
@@ -10,5 +14,5 @@ export default function Layout({ children }) {
       </div>
       <Footer />
     </>
-  )
+  );
 }

@@ -1,6 +1,8 @@
 import DateFormater from '../components/date-formater'
 import CoverImage from '../components/cover-image'
 
+
+
 export default function PostHeader({ title, coverImage, date }) {
   return (
     <>
@@ -12,7 +14,7 @@ export default function PostHeader({ title, coverImage, date }) {
           <DateFormater dateString={date} />
         </div>
         <div className="mb-6 mx-5 sm:mx-0">
-          <CoverImage title={title} src={coverImage} />
+          <CoverImage title={title} src={coverImage} slug />
         </div>
       </div>
     </>

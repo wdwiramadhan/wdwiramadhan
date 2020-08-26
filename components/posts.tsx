@@ -1,5 +1,5 @@
-import DateFormater from '../components/date-formater'
-import Link from 'next/link'
+import DateFormater from "./date-formater";
+import Link from "next/link";
 
 export default function Posts({ posts }) {
   return (
@@ -15,10 +15,12 @@ export default function Posts({ posts }) {
             <div className="text-md mb-4 text-gray-600">
               <DateFormater dateString={post.date} />
             </div>
-            <p className="text-base leading-relaxed mb-4 text-gray-700">{post.excerpt}</p>
+            <p className="text-base leading-relaxed mb-4 text-gray-700">
+              {post.excerpt}
+            </p>
           </div>
         ))}
       </div>
     </section>
-  )
+  );
 }

@@ -31,7 +31,7 @@ export default function Index() {
                 Currently i'm a freelancer that focus on building websites.
               </p>
               <p className="text-md leading-relaxed text-gray-700 mt-8">
-                If you have an exciting project or idea in mind, feel free to
+                If you have an exciting project or idea in mind, please feel free to
                 contact me
               </p>
             </div>

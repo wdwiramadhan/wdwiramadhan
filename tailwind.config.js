@@ -1,5 +1,8 @@
  module.exports = {
-  purge: ['./components/**/*.js', './pages/**/*.js'],
+  future: {
+    removeDeprecatedGapUtilities: true,
+  },
+  purge: ['./components/**/*.{js,ts,jsx,tsx}', './pages/**/*.{js,ts,jsx,tsx}'],
   theme: {
     extend: {
       maxWidth: {

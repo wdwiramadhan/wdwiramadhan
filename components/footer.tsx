@@ -3,7 +3,7 @@ import Container from "./container";
 export default function Footer() {
   const yearNow = new Date().getFullYear();
   return (
-    <footer className="mt-24 mb-3">
+    <footer className="mt-20 mb-3">
       <Container>
         <div className="py-28 flex flex-col text-center">
           <p className="text-sm text-gray-700">

@@ -28,7 +28,7 @@ export default function Index() {
               <p className="text-md leading-relaxed text-gray-700 mt-6">
                 I'm full-stack developer who uses React or Vue at front-end and
                 Express or Laravel at back-end. I'm Open Source enthusiast.
-                Currently i'm a freelancer that focus on building websites.
+                Currently i'm a freelancer who focuses on building websites.
               </p>
               <p className="text-md leading-relaxed text-gray-700 mt-8">
                 If you have an exciting project or idea in mind, please feel free to

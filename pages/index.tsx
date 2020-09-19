@@ -21,13 +21,12 @@ export default function Index() {
                 wdwiramadhan
               </div>
             </div>
-            <div className="rounded-md overflow-hidden shadow-md md:px-6 md:py-8 px-4 py-6 mt-6">
+            <div className="rounded-md overflow-hidden shadow-md md:p-6 p-4 mt-6">
               <p className="text-2xl font-bold text-gray-700">
                 Wahyu Dwi Ramadhan
               </p>
               <p className="text-md leading-relaxed text-gray-700 mt-6">
-                I'm full-stack developer who uses React or Vue at front-end and
-                Express or Laravel at back-end. I'm Open Source enthusiast.
+                I'm full-stack developer who uses React, Vue and Node.js. I'm Open Source enthusiast.
                 Currently i'm a freelancer who focuses on building websites.
               </p>
               <p className="text-md leading-relaxed text-gray-700 mt-8">
@@ -37,13 +36,13 @@ export default function Index() {
             </div>
           </section>
           <section className="flex flex-col mx-auto max-w-2xl mt-10 md:mt-16">
-            <div className="rounded-md overflow-hidden shadow-md md:px-6 md:py-8 px-4 py-6">
+            <div className="rounded-md overflow-hidden shadow-md md:p-6 p-4 py-6">
               <div className="text-lg text-gray-700">Projects</div>
               <p className="text-2xl font-bold text-gray-700 mt-3">Coming Soon</p>
             </div>
           </section>
           <section className="flex flex-col mx-auto max-w-2xl mt-10 md:mt-16">
-            <div className="rounded-md overflow-hidden shadow-md md:px-6 md:py-8 px-4 py-6">
+            <div className="rounded-md overflow-hidden shadow-md md:p-6 p-4 py-6">
               <div className="text-lg text-gray-700">Articles</div>
               <p className="text-2xl font-bold text-gray-700 mt-3">Coming Soon</p>
             </div>

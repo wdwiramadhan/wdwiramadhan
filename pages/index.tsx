@@ -46,13 +46,13 @@ export default function Index() {
           <section className="flex flex-col px-5 sm:px-2 mx-auto max-w-xl mt-10 sm:mt-12">
             <p className="text-xl text-gray-700">Talks</p>
             <p className="text-gray-800 leading-relaxed mt-3">
-             Cooming Soon
+             Coming Soon
             </p>
           </section>
           <section className="flex flex-col px-5 sm:px-2 mx-auto max-w-xl mt-10 sm:mt-12">
             <p className="text-xl text-gray-700">Articles</p>
             <p className="text-gray-800 leading-relaxed mt-3">
-             Cooming Soon
+             Coming Soon
             </p>
           </section>
         </Container>

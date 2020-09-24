@@ -10,42 +10,50 @@ export default function Index() {
           <title>wdwiramadhan</title>
         </Head>
         <Container>
-          <section className="flex flex-col mx-auto max-w-2xl mt-12">
-            <div className="flex flex-row">
-              <img
-                src="./assets/profile.jpg"
-                alt="profile picture"
-                className="rounded-full max-w-avatar"
-              />
-              <div className="text-xl text-gray-700 px-5 my-auto">
-                wdwiramadhan
-              </div>
-            </div>
-            <div className="rounded-md overflow-hidden shadow-md md:p-6 p-4 mt-6">
-              <p className="text-2xl font-bold text-gray-700">
+          <section className="mx-auto px-5 sm:px-2 max-w-xl mt-24">
+            <img
+              src="./assets/profile.jpg"
+              alt="profile picture"
+              className="mx-auto rounded-full max-w-avatar"
+            />
+            <div className="text-center mt-4">
+              <p className="text-3xl sm:text-4xl font-bold text-gray-800">
                 Wahyu Dwi Ramadhan
               </p>
-              <p className="text-md leading-relaxed text-gray-700 mt-6">
-                I'm full-stack developer who uses React, Vue and Node.js. I'm Open Source enthusiast.
-                Currently i'm a freelancer who focuses on building websites.
-              </p>
-              <p className="text-md leading-relaxed text-gray-700 mt-8">
-                If you have an exciting project or idea in mind, please feel free to
-                contact me
+              <p className="text-lg sm:text-xl text-gray-500">
+                Fullstack Developer
               </p>
             </div>
+            <hr className="mt-8" />
           </section>
-          <section className="flex flex-col mx-auto max-w-2xl mt-10 md:mt-16">
-            <div className="rounded-md overflow-hidden shadow-md md:p-6 p-4 py-6">
-              <div className="text-lg text-gray-700">Projects</div>
-              <p className="text-2xl font-bold text-gray-700 mt-3">Coming Soon</p>
-            </div>
+          <section className="flex flex-col px-5 sm:px-2 mx-auto max-w-xl mt-10 sm:mt-12">
+            <p className="text-xl text-gray-700">Projects</p>
+            <p className="text-gray-800 leading-relaxed mt-3">
+              Fullstack Developer at
+              <span>
+                <a
+                  href="https://bidikkampus.com/"
+                  className="ml-1 text-blue-600 hover:underline"
+                  target="_blank"
+                  rel="noreferrer"
+                  aria-label="next link"
+                >
+                  Bidik Kampus
+                </a>
+              </span>
+            </p>
           </section>
-          <section className="flex flex-col mx-auto max-w-2xl mt-10 md:mt-16">
-            <div className="rounded-md overflow-hidden shadow-md md:p-6 p-4 py-6">
-              <div className="text-lg text-gray-700">Articles</div>
-              <p className="text-2xl font-bold text-gray-700 mt-3">Coming Soon</p>
-            </div>
+          <section className="flex flex-col px-5 sm:px-2 mx-auto max-w-xl mt-10 sm:mt-12">
+            <p className="text-xl text-gray-700">Talks</p>
+            <p className="text-gray-800 leading-relaxed mt-3">
+             Cooming Soon
+            </p>
+          </section>
+          <section className="flex flex-col px-5 sm:px-2 mx-auto max-w-xl mt-10 sm:mt-12">
+            <p className="text-xl text-gray-700">Articles</p>
+            <p className="text-gray-800 leading-relaxed mt-3">
+             Cooming Soon
+            </p>
           </section>
         </Container>
       </Layout>

@@ -20,14 +20,14 @@ export default function Index() {
               <p className="text-3xl sm:text-4xl font-bold text-gray-800">
                 Wahyu Dwi Ramadhan
               </p>
-              <p className="text-lg sm:text-xl text-gray-500">
+              <p className="text-lg sm:text-xl font-normal text-gray-600">
                 Fullstack Developer
               </p>
             </div>
             <hr className="mt-8" />
           </section>
           <section className="flex flex-col px-5 sm:px-2 mx-auto max-w-xl mt-10 sm:mt-12">
-            <p className="text-xl text-gray-700">Projects</p>
+            <p className="text-xl text-gray-800">Projects</p>
             <p className="text-gray-800 leading-relaxed mt-3">
               Fullstack Developer at
               <span>
@@ -44,13 +44,13 @@ export default function Index() {
             </p>
           </section>
           <section className="flex flex-col px-5 sm:px-2 mx-auto max-w-xl mt-10 sm:mt-12">
-            <p className="text-xl text-gray-700">Talks</p>
+            <p className="text-xl text-gray-800">Talks</p>
             <p className="text-gray-800 leading-relaxed mt-3">
              Coming Soon
             </p>
           </section>
           <section className="flex flex-col px-5 sm:px-2 mx-auto max-w-xl mt-10 sm:mt-12">
-            <p className="text-xl text-gray-700">Articles</p>
+            <p className="text-xl text-gray-800">Articles</p>
             <p className="text-gray-800 leading-relaxed mt-3">
              Coming Soon
             </p>

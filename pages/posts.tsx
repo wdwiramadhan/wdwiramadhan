@@ -1,6 +1,5 @@
 import Container from '../components/container'
 import AllPosts from '../components/posts'
-import Header from '../components/header'
 import Layout from '../components/layout'
 import { getAllPosts } from '../lib/api'
 import Head from 'next/head'
@@ -12,7 +11,6 @@ export default function Posts({ allPosts }) {
         <Head>
           <title>wdwiramadhan</title>
         </Head>
-        <Header />
         <Container>
           {allPosts.length > 0 && <AllPosts posts={allPosts} />}
         </Container>

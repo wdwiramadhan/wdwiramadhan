@@ -4,7 +4,7 @@ import Link from "next/link";
 export default function Posts({ posts }) {
   return (
     <section>
-      <div className="max-w-3xl mx-auto">
+      <div className="max-w-3xl mx-auto mt-5">
         {posts.map((post) => (
           <div key={post.title}>
             <h3 className="md:text-2xl text-xl leading-relaxed lg:text-3xl font-bold text-gray-700">

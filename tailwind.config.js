@@ -6,7 +6,7 @@
   theme: {
     extend: {
       maxWidth: {
-        'avatar': '110px',
+        'avatar': '100px',
       }
     },
   },

@@ -11,7 +11,7 @@ export default function Footer() {
             <span>
               <a
                 href="https://nextjs.org/"
-                className="ml-1 text-gray-700 hover:text-blue-500"
+                className="ml-1 text-gray-700 hover:text-blue-600"
                 target="_blank"
                 rel="noreferrer"
                 aria-label="next link"

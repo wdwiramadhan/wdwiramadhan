@@ -15,7 +15,7 @@ export default function talks() {
           <div className="mx-auto px-5 sm:px-2 max-w-xl mt-16">
             <div className="flex">
               <Link href="/">
-                <a className="text-gray-800 hover:text-blue-500 flex flex-row">
+                <a className="text-gray-800 hover:text-blue-600 flex flex-row">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 20 20"
@@ -38,7 +38,7 @@ export default function talks() {
                   <li className="mt-3">
                     <a
                       href={talk.slides}
-                      className="text-blue-500 hover:text-blue-700 text-lg"
+                      className="text-blue-600 hover:text-blue-700 text-lg"
                       target="_blank"
                       rel="noreferrer"
                       aria-label="next link"

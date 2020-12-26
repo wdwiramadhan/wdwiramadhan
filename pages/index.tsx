@@ -31,14 +31,14 @@ export default function Index() {
             </div>
             <hr className="mt-8" />
           </section>
-          <section className="flex flex-col px-5 sm:px-2 mx-auto max-w-xl mt-10 sm:mt-12">
+          <section className="flex flex-col px-5 sm:px-2 mx-auto max-w-xl mt-6 sm:mt-8">
             <h1 className="text-xl text-gray-800">Projects</h1>
             <div className="text-gray-800 text-base mt-3">
               Fullstack Developer at
               <span>
                 <a
                   href="https://bidikkampus.com/"
-                  className="ml-1 text-blue-500 hover:text-blue-700"
+                  className="ml-1 text-blue-600 hover:text-blue-700"
                   target="_blank"
                   rel="noreferrer"
                   aria-label="next link"
@@ -55,7 +55,7 @@ export default function Index() {
                 <li>
                   <a
                     href={talk.slides}
-                    className="text-blue-500 hover:text-blue-700 text-base"
+                    className="text-blue-600 hover:text-blue-700 text-base"
                     target="_blank"
                     rel="noreferrer"
                     aria-label="next link"
@@ -70,7 +70,7 @@ export default function Index() {
             ))}
             <div className="flex-auto mt-3">
               <Link as="/talks" href="/talks">
-                <a className="text-gray-800 hover:text-blue-500 text-base">
+                <a className="text-gray-800 hover:text-blue-600 text-base">
                   <span>More...</span>
                 </a>
               </Link>

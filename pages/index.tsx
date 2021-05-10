@@ -16,7 +16,7 @@ export default function Home() {
             _hover={{ color: "blue.400" }}
             href="https://github.com/wdwiramadhan"
           >
-            <Text fontSize="5xl" fontWeight="bold">
+            <Text fontSize={["4xl", "5xl"]} fontWeight="bold">
               Under Reconstraction
             </Text>
           </Link>

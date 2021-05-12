@@ -17,7 +17,7 @@ export default function Home() {
             href="https://github.com/wdwiramadhan"
           >
             <Text fontSize={["4xl", "5xl"]} fontWeight="bold">
-              Under Reconstraction
+              Under Reconstruction
             </Text>
           </Link>
         </Flex>

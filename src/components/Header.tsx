@@ -19,9 +19,8 @@ function NavItem({ link }: { link: LinkType }) {
       <Link href={href}>
         <a
           className={clsx(
-            "p-2 rounded-md",
-            "hover:bg-gray-200 hover:dark:bg-neutral-900 hover:dark:text-white",
-            isActive && "text-gray-800 font-semibold dark:text-white "
+            "hover:text-indigo-400",
+            isActive && "text-indigo-400"
           )}
         >
           {label}
@@ -42,8 +41,8 @@ function Nav() {
     <nav>
       <ul
         className={clsx(
-          "flex space-x-1 sm:space-x-2",
-          "font-medium text-md text-gray-500 dark:text-gray-400"
+          "flex space-x-4 md:space-x-6",
+          "font-medium text-md text-gray-800 dark:text-white"
         )}
       >
         {links.map((link: LinkType, idx) => (
@@ -63,21 +62,18 @@ export default function Header() {
   }, []);
 
   return (
-    <header className="w-full py-8">
-      <div className="container max-w-5xl mx-auto px-2">
+    <header className="w-full py-8 transition-shadow">
+      <div className="container max-w-5xl mx-auto px-4">
         <div className="flex justify-between items-center">
           <Nav />
           <button
             onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
-            className={clsx(
-              "p-2 bg-gray-200 dark:bg-gray-700 rounded-md text-gray-700 dark:text-white",
-              "hover:ring-2 dark:hover:none hover:ring-gray-400"
-            )}
+            className={clsx("p-2 text-indigo-400 ")}
           >
             {mounted && theme === "dark" ? (
-              <SunIcon className="h-5 w-5" />
+              <SunIcon className="h-6 w-6" />
             ) : (
-              <MoonIcon className="h-5 w-5" />
+              <MoonIcon className="h-6 w-6" />
             )}
           </button>
         </div>

@@ -42,7 +42,7 @@ function Nav() {
       <ul
         className={clsx(
           "flex space-x-4 md:space-x-6",
-          "font-medium text-md text-gray-800 dark:text-white"
+          "font-medium text-md text-gray-800 dark:text-gray-100"
         )}
       >
         {links.map((link: LinkType, idx) => (

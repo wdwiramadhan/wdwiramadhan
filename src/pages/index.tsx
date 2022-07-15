@@ -1,14 +1,15 @@
 import type { NextPage } from "next";
 import Link from "next/link";
-import { Layout } from "@/layouts";
 import clsx from "clsx";
+
 import { Seo } from "@/components";
 import useLoaded from "@/hooks/useLoaded";
 
 const Home: NextPage = () => {
   const isLoaded = useLoaded();
+
   return (
-    <Layout>
+    <>
       <Seo />
       <main>
         <section className="flex container max-w-5xl mx-auto px-4">
@@ -19,7 +20,7 @@ const Home: NextPage = () => {
             )}
           >
             <h1
-              className="font-bold text-4xl md:text-5xl text-gray-800 dark:text-white"
+              className="font-bold text-4xl md:text-5xl text-gray-800 dark:text-gray-100"
               data-fade="1"
             >
               Wahyu Dwi Ramadhan
@@ -28,7 +29,7 @@ const Home: NextPage = () => {
               className="mt-3 text-xl text-gray-600 dark:text-gray-400 tracking-wide"
               data-fade="2"
             >
-              Fullstack Developer
+              Software Engineer
             </h2>
             <p
               className="mt-4 mb-4 text-lg text-gray-600 dark:text-gray-400 tracking-wide"
@@ -51,7 +52,7 @@ const Home: NextPage = () => {
               <Link href="/about">
                 <a
                   className={clsx(
-                    "py-3 px-6 text-sm sm:text-md font-semibold text-gray-800 rounded-lg dark:bg-gray-800 dark:text-white",
+                    "py-3 px-6 text-sm sm:text-md font-semibold text-gray-800 rounded-lg dark:bg-gray-800 dark:text-gray-100",
                     "border dark:border-0",
                     "transform hover:scale-[1.02]"
                   )}
@@ -63,7 +64,7 @@ const Home: NextPage = () => {
           </div>
         </section>
       </main>
-    </Layout>
+    </>
   );
 };
 

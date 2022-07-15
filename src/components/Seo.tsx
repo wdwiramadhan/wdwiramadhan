@@ -6,7 +6,7 @@ export default function Seo(props: any) {
   const { ...customMeta } = props;
 
   const meta = {
-    title: "Wahyu Dwi Ramadhan's Portfolio",
+    title: "Wahyu Dwi Ramadhan",
     siteName: "wdwiramadhan",
     description:
       "Web to showcase of my projects, and some of my thoughts about web development",
@@ -15,6 +15,8 @@ export default function Seo(props: any) {
     type: "website",
     ...customMeta,
   };
+  meta.title = props.title ? `${meta.title} | ${meta.siteName}` : meta.title;
+
   return (
     <Head>
       <title>{meta.title}</title>

@@ -1,4 +1,3 @@
-import * as React from "react";
 import { Header } from "@/components";
 import { PreloadProvider } from "@/context/PreloadContext";
 

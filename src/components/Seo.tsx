@@ -8,8 +8,7 @@ export default function Seo(props: any) {
   const meta = {
     title: "Wahyu Dwi Ramadhan",
     siteName: "wdwiramadhan",
-    description:
-      "Web to showcase of my projects, and some of my thoughts about web development",
+    description: "Web to showcase my thoughts about web development",
     image: "#",
     url: "https://wdwiramadhan.vercel.app",
     type: "website",

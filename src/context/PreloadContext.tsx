@@ -1,11 +1,11 @@
-import * as React from "react";
+import { useState, useEffect, createContext, ReactNode } from "react";
 
-const PreloadContext = React.createContext<boolean>(false);
+const PreloadContext = createContext<boolean>(false);
 
-function PreloadProvider({ children }: { children: React.ReactNode }) {
-  const [preloaded, setPreloaded] = React.useState<boolean>(false);
+function PreloadProvider({ children }: { children: ReactNode }) {
+  const [preloaded, setPreloaded] = useState<boolean>(false);
 
-  React.useEffect(() => {
+  useEffect(() => {
     setTimeout(() => {
       setPreloaded(true);
     }, 200);

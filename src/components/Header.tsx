@@ -1,9 +1,10 @@
+import { useEffect, useState } from "react";
+import { useRouter } from "next/router";
 import clsx from "clsx";
+
 import { MoonIcon, SunIcon } from "@heroicons/react/outline";
 import useTheme from "@/hooks/useTheme";
-import { useRouter } from "next/router";
-import { useEffect, useState } from "react";
-import Link from "next/link";
+import { BasicLink } from "./BasicLink";
 
 type LinkType = {
   href: string;
@@ -16,16 +17,9 @@ function NavItem({ link }: { link: LinkType }) {
   const isActive = router.asPath === href;
   return (
     <li>
-      <Link href={href}>
-        <a
-          className={clsx(
-            "hover:text-indigo-400",
-            isActive && "text-indigo-400"
-          )}
-        >
-          {label}
-        </a>
-      </Link>
+      <BasicLink href={href} isActive={isActive}>
+        {label}
+      </BasicLink>
     </li>
   );
 }
@@ -34,7 +28,6 @@ function Nav() {
   const links: Array<LinkType> = [
     { href: "/", label: "Home" },
     { href: "/blog", label: "Blog" },
-    { href: "/project", label: "Project" },
     { href: "/about", label: "About" },
   ];
   return (

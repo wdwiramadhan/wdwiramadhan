@@ -21,7 +21,7 @@ const Home: NextPage = () => {
             )}
           >
             <h1
-              className="font-bold text-4xl md:text-5xl text-gray-800 dark:text-gray-100"
+              className="font-bold text-3xl sm:text-4xl md:text-5xl text-gray-800 dark:text-gray-100"
               data-fade="1"
             >
               Wahyu Dwi Ramadhan

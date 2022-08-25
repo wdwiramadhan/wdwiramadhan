@@ -11,12 +11,12 @@ export default function Blog() {
     <Layout>
       <Seo title="Blog" />
       <main>
-        <section className="flex container max-w-5xl mx-auto px-4 py-10">
+        <section className="flex container max-w-5xl mx-auto px-4 py-4 sm:py-10">
           <div
             className={clsx("flex flex-col gap-6", isLoaded && "fade-in-start")}
           >
             <h1
-              className="font-bold text-4xl text-gray-800 dark:text-gray-100"
+              className="font-bold text-2xl sm:text-4xl text-gray-800 dark:text-gray-100"
               data-fade="1"
             >
               Blog

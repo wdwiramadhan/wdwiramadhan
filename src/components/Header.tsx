@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { useRouter } from "next/router";
 import clsx from "clsx";
-import { BasicLink } from "../BasicLink";
+import { BasicLink } from "./BasicLink";
 
 import { MoonIcon, SunIcon } from "@heroicons/react/outline";
 import useTheme from "@/hooks/useTheme";

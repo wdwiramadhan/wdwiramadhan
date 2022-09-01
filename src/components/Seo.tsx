@@ -1,7 +1,7 @@
 import Head from "next/head";
 import { useRouter } from "next/router";
 
-export default function Seo(props: any) {
+export function Seo(props: any) {
   const router = useRouter();
   const { ...customMeta } = props;
 

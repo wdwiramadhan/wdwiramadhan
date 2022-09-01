@@ -1,3 +1,4 @@
-export { default as Header } from "./Header";
-export { default as Footer } from "./Footer";
-export { default as Seo } from "./Seo";
+export { Header } from "./Header";
+export { Footer } from "./Footer";
+export { Seo } from "./Seo";
+export { BasicLink } from "./BasicLink";

@@ -1,35 +1,24 @@
 import { useEffect, useState } from "react";
 import { useRouter } from "next/router";
 import clsx from "clsx";
+import { BasicLink } from "../BasicLink";
 
 import { MoonIcon, SunIcon } from "@heroicons/react/outline";
 import useTheme from "@/hooks/useTheme";
-import { BasicLink } from "./BasicLink";
 
 type LinkType = {
   href: string;
   label: string;
 };
 
-function NavItem({ link }: { link: LinkType }) {
-  const router = useRouter();
-  const { href, label } = link;
-  const isActive = router.asPath === href;
-  return (
-    <li>
-      <BasicLink href={href} isActive={isActive}>
-        {label}
-      </BasicLink>
-    </li>
-  );
-}
-
 function Nav() {
+  const router = useRouter();
   const links: Array<LinkType> = [
     { href: "/", label: "Home" },
     { href: "/blog", label: "Blog" },
     { href: "/about", label: "About" },
   ];
+
   return (
     <nav>
       <ul
@@ -39,14 +28,18 @@ function Nav() {
         )}
       >
         {links.map((link: LinkType, idx) => (
-          <NavItem key={idx} link={link} />
+          <li key={idx}>
+            <BasicLink href={link.href} isActive={router.asPath === link.href}>
+              {link.label}
+            </BasicLink>
+          </li>
         ))}
       </ul>
     </nav>
   );
 }
 
-export default function Header() {
+export function Header() {
   const [mounted, setMounted] = useState<boolean>(false);
   const [theme, setTheme] = useTheme();
 

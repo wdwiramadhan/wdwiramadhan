@@ -4,7 +4,7 @@ import clsx from "clsx";
 import { Seo } from "@/components";
 import useLoaded from "@/hooks/useLoaded";
 import { Layout } from "@/layouts";
-import { BasicLink } from "@/components/BasicLink";
+import { BasicLink } from "@/components";
 
 export default function About() {
   const isLoaded = useLoaded();
@@ -41,10 +41,9 @@ export default function About() {
                   I&apos;m Wahyu Dwi Ramadhan, a software engineer at{" "}
                   <BasicLink
                     href="https://www.tiket.com/"
-                    className="no-underline"
+                    className="no-underline font-normal text-gray-600 dark:text-gray-300"
                     isExternal
                     isNewTab
-                    isActive
                   >
                     tiket.com
                   </BasicLink>{" "}

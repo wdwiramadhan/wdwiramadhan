@@ -2,31 +2,20 @@ import Image from "next/image";
 import clsx from "clsx";
 
 import { Seo } from "@/components";
-import useLoaded from "@/hooks/useLoaded";
 import { Layout } from "@/layouts";
 import { BasicLink } from "@/components";
 
 export default function About() {
-  const isLoaded = useLoaded();
-
   return (
     <Layout>
       <Seo title="About" />
       <main>
         <section className="flex container max-w-5xl mx-auto px-4 py-4 sm:py-10">
-          <div
-            className={clsx(
-              "flex flex-col gap-6 w-full",
-              isLoaded && "fade-in-start"
-            )}
-          >
-            <h1
-              className="font-bold text-2xl sm:text-4xl text-gray-800 dark:text-gray-100"
-              data-fade="1"
-            >
+          <div className={clsx("flex flex-col gap-6 w-full")}>
+            <h1 className="font-bold text-2xl sm:text-4xl text-gray-800 dark:text-gray-100">
               About
             </h1>
-            <div data-fade="2">
+            <div>
               <div className="float-right ml-4 w-[170px] sm:w-auto">
                 <Image
                   src="https://res.cloudinary.com/wdwiramadhan/image/upload/v1642863133/wdwiramadhan/photo-profile.jpg"
@@ -37,7 +26,7 @@ export default function About() {
                 />
               </div>
               <article className="prose dark:prose-invert text-lg leading-8 text-gray-600 dark:text-gray-300">
-                <p data-fade="2">
+                <p>
                   I&apos;m Wahyu Dwi Ramadhan, a software engineer at{" "}
                   <BasicLink
                     href="https://www.tiket.com/"
@@ -49,7 +38,7 @@ export default function About() {
                   </BasicLink>{" "}
                   who focuses on frontend development.
                 </p>
-                <p data-fade="3">
+                <p>
                   I have technical background in Javascript programming language
                   and have develop applications in different domain in
                   Javascript. In this web i write article to share my knowledge

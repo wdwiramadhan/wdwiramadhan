@@ -1,7 +1,6 @@
 import clsx from "clsx";
 
-import { Layout } from "@/layouts";
-import { Seo } from "@/components";
+import { Seo, Layout } from "@/components";
 
 export default function Blog() {
   return (

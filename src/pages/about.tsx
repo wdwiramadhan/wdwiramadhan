@@ -1,9 +1,7 @@
 import Image from "next/image";
 import clsx from "clsx";
 
-import { Seo } from "@/components";
-import { Layout } from "@/layouts";
-import { BasicLink } from "@/components";
+import { Seo, Layout, BasicLink } from "@/components";
 
 export default function About() {
   return (

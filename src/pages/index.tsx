@@ -2,8 +2,7 @@ import type { NextPage } from "next";
 import Link from "next/link";
 import clsx from "clsx";
 
-import { Seo } from "@/components";
-import { Layout } from "@/layouts";
+import { Seo, Layout } from "@/components";
 
 const Home: NextPage = () => {
   return (

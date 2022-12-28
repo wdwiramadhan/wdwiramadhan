@@ -1,6 +1,5 @@
 import type { NextPage } from "next";
 import Link from "next/link";
-import clsx from "clsx";
 
 import { Seo, Layout } from "@/components";
 
@@ -9,35 +8,28 @@ const Home: NextPage = () => {
     <Layout>
       <Seo />
       <main>
-        <section className="flex container max-w-5xl mx-auto px-4">
-          <div className={clsx("flex flex-col max-w-2xl py-16 md:py-32")}>
-            <h1 className="font-bold text-3xl sm:text-4xl md:text-5xl text-gray-800 dark:text-gray-100">
+        <section className="container mx-auto flex max-w-5xl px-4">
+          <div className="flex max-w-2xl flex-col py-16 md:py-32">
+            <h1 className="text-3xl font-bold text-gray-800 dark:text-gray-100 sm:text-4xl md:text-5xl">
               Wahyu Dwi Ramadhan
             </h1>
-            <h2 className="mt-3 text-xl text-gray-600 dark:text-gray-400 tracking-wide">
+            <h2 className="mt-3 text-xl tracking-wide text-gray-600 dark:text-gray-400">
               Software Engineer
             </h2>
-            <p className="mt-4 mb-4 text-lg text-gray-600 dark:text-gray-400 tracking-wide">
+            <p className="mt-4 mb-4 text-lg tracking-wide text-gray-600 dark:text-gray-400">
               Working with Javascript Ecosystem. Writing about software
               technology to stay in touch with its progress.
             </p>
-            <div className="flex space-x-3 sm:space-x-4 mt-6">
+            <div className="mt-6 flex space-x-3 sm:space-x-4">
               <Link
                 href="/blog"
-                className={clsx(
-                  "py-3 px-6 border-0 bg-gray-800 dark:bg-indigo-500 text-sm sm:text-md font-semibold text-white rounded-lg",
-                  "transform hover:scale-[1.02]"
-                )}
+                className="sm:text-md transform rounded-lg border-0 bg-gray-800 py-3 px-6 text-sm font-semibold text-white hover:scale-[1.02] dark:bg-indigo-500"
               >
                 Read the blog
               </Link>
               <Link
                 href="/about"
-                className={clsx(
-                  "py-3 px-6 text-sm sm:text-md font-semibold text-gray-800 rounded-lg dark:bg-gray-800 dark:text-gray-100",
-                  "border dark:border-0",
-                  "transform hover:scale-[1.02]"
-                )}
+                className="sm:text-md transform rounded-lg border py-3 px-6 text-sm font-semibold text-gray-800 hover:scale-[1.02] dark:border-0 dark:bg-gray-800 dark:text-gray-100"
               >
                 Learn about me
               </Link>

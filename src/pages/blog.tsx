@@ -1,5 +1,3 @@
-import clsx from "clsx";
-
 import { Seo, Layout } from "@/components";
 
 export default function Blog() {
@@ -7,9 +5,9 @@ export default function Blog() {
     <Layout>
       <Seo title="Blog" />
       <main>
-        <section className="flex container max-w-5xl mx-auto px-4 py-4 sm:py-10">
-          <div className={clsx("flex flex-col gap-6")}>
-            <h1 className="font-bold text-2xl sm:text-4xl text-gray-800 dark:text-gray-100">
+        <section className="container mx-auto flex max-w-5xl px-4 py-4 sm:py-10">
+          <div className="flex flex-col gap-6">
+            <h1 className="text-2xl font-bold text-gray-800 dark:text-gray-100 sm:text-4xl">
               Blog
             </h1>
             <div className="text-xl text-gray-600 dark:text-gray-300">

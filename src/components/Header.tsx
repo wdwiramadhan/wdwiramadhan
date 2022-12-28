@@ -21,12 +21,7 @@ function Nav() {
 
   return (
     <nav>
-      <ul
-        className={clsx(
-          "flex space-x-4 md:space-x-6",
-          "font-medium text-md text-gray-800 dark:text-gray-100"
-        )}
-      >
+      <ul className="text-md flex space-x-4 font-medium text-gray-800 dark:text-gray-100 md:space-x-6 ">
         {links.map((link: LinkType, idx) => (
           <li key={idx}>
             <BasicLink href={link.href} isActive={router.asPath === link.href}>
@@ -49,12 +44,12 @@ export function Header() {
 
   return (
     <header className="w-full py-8 transition-shadow">
-      <div className="container max-w-5xl mx-auto px-4">
-        <div className="flex justify-between items-center">
+      <div className="container mx-auto max-w-5xl px-4">
+        <div className="flex items-center justify-between">
           <Nav />
           <button
             onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
-            className={clsx("p-2 text-indigo-400 ")}
+            className="p-2 text-indigo-400"
           >
             {mounted && theme === "dark" ? (
               <SunIcon className="h-6 w-6" />

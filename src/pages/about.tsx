@@ -1,5 +1,4 @@
 import Image from "next/image";
-import clsx from "clsx";
 
 import { Seo, Layout, BasicLink } from "@/components";
 
@@ -8,9 +7,9 @@ export default function About() {
     <Layout>
       <Seo title="About" />
       <main>
-        <section className="flex container max-w-5xl mx-auto px-4 py-4 sm:py-10">
-          <div className={clsx("flex flex-col gap-6 w-full")}>
-            <h1 className="font-bold text-2xl sm:text-4xl text-gray-800 dark:text-gray-100">
+        <section className="container mx-auto flex max-w-5xl px-4 py-4 sm:py-10">
+          <div className="flex w-full flex-col gap-6">
+            <h1 className="text-2xl font-bold text-gray-800 dark:text-gray-100 sm:text-4xl">
               About
             </h1>
             <div>
@@ -23,12 +22,12 @@ export default function About() {
                   className="rounded-md"
                 />
               </div>
-              <article className="prose dark:prose-invert text-lg leading-8 text-gray-600 dark:text-gray-300">
+              <article className="prose text-lg leading-8 text-gray-600 dark:prose-invert dark:text-gray-300">
                 <p>
                   I&apos;m Wahyu Dwi Ramadhan, a software engineer at{" "}
                   <BasicLink
                     href="https://www.tiket.com/"
-                    className="no-underline font-normal text-gray-600 dark:text-gray-300"
+                    className="font-normal text-gray-600 no-underline dark:text-gray-300"
                     isExternal
                     isNewTab
                   >

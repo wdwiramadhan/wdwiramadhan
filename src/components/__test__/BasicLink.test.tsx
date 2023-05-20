@@ -1,10 +1,10 @@
 import { render, screen } from "test-utils";
-import { BasicLink } from "./BasicLink";
+import { BasicLink } from "../BasicLink";
 
 describe("Test basic link component", () => {
   it("should render correctly use default props", () => {
-    render(<BasicLink>Home</BasicLink>);
-    expect(screen.getByText("Home")).toHaveAttribute("href", "");
+    render(<BasicLink href="/">Home</BasicLink>);
+    expect(screen.getByText("Home")).toHaveAttribute("href", "/");
   });
 
   it("should render correctly when have isActive props", () => {

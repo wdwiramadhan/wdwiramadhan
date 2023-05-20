@@ -1,24 +1,27 @@
-import Link from "next/link";
+import Link, { LinkProps } from "next/link";
 import clsx from "clsx";
+import React from "react";
 
-interface BasicLinkProps extends React.AnchorHTMLAttributes<HTMLAnchorElement> {
+type BasicLinkProps = {
   isNewTab?: boolean;
   isExternal?: boolean;
   isActive?: boolean;
-}
+  children: React.ReactNode;
+} & React.ComponentPropsWithoutRef<"a"> &
+  LinkProps;
 
-export const BasicLink: React.FC<BasicLinkProps> = ({
+export function BasicLink({
   children,
-  href = "",
+  href,
   isNewTab = false,
   isExternal = false,
   isActive = false,
   className,
   ...rest
-}: BasicLinkProps) => {
+}: BasicLinkProps) {
   const style = clsx(
-    "hover:text-indigo-400",
-    isActive && "text-indigo-400",
+    !isActive && "hover:text-indigo-400 text-gray-600 dark:text-gray-400",
+    isActive && "text-indigo-400 dark:text-indigo-400",
     className
   );
 
@@ -41,4 +44,4 @@ export const BasicLink: React.FC<BasicLinkProps> = ({
       {children}
     </a>
   );
-};
+}

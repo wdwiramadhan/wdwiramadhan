@@ -1,5 +1,14 @@
 import { useState, useEffect, createContext, ReactNode } from "react";
 
+export type ThemeContextType = {
+  theme: string;
+  setTheme: (theme: string) => void;
+};
+
+export const ThemeContext = createContext<ThemeContextType | undefined>(
+  undefined
+);
+
 const getInitialTheme = (): string => {
   if (typeof window !== "undefined" && window.localStorage) {
     const storedPrefs = window.localStorage.getItem("theme");
@@ -12,11 +21,10 @@ const getInitialTheme = (): string => {
     }
   }
 
-  return "light";
+  return "dark";
 };
 
-const ThemeContext = createContext<any>(getInitialTheme());
-const ThemeProvider = ({ children }: { children: ReactNode }) => {
+export const ThemeProvider = ({ children }: { children: ReactNode }) => {
   const [theme, setTheme] = useState<string>(getInitialTheme());
   const rawSetTheme = (rawTheme: string) => {
     if (rawTheme === "dark") {
@@ -36,10 +44,8 @@ const ThemeProvider = ({ children }: { children: ReactNode }) => {
   }, [theme]);
 
   return (
-    <ThemeContext.Provider value={[theme, setTheme]}>
+    <ThemeContext.Provider value={{ theme, setTheme }}>
       {children}
     </ThemeContext.Provider>
   );
 };
-
-export { ThemeContext, ThemeProvider };

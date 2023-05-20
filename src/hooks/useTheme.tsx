@@ -1,6 +1,6 @@
 import { useContext } from "react";
-import { ThemeContext } from "@/context/ThemeContext";
+import { ThemeContext, ThemeContextType } from "@/context/ThemeContext";
 
 export default function useTheme() {
-  return useContext(ThemeContext);
+  return useContext(ThemeContext) as ThemeContextType;
 }

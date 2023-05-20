@@ -1,10 +1,14 @@
+const { withContentlayer } = require("next-contentlayer");
+
 /** @type {import('next').NextConfig} */
-module.exports = {
+const nextConfig = {
   images: {
-    domains: ["res.cloudinary.com"],
+    domains: ["res.cloudinary.com", "pixelstalk.net"],
   },
   eslint: {
     dirs: ["src"],
   },
   reactStrictMode: true,
 };
+
+module.exports = withContentlayer(nextConfig);

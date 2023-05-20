@@ -14,7 +14,10 @@ export function Seo(props: any) {
     type: "website",
     ...customMeta,
   };
-  meta.title = props.title ? `${meta.title} | ${meta.siteName}` : meta.title;
+
+  if (props.title) {
+    meta.title = `${meta.title} | ${meta.siteName}`;
+  }
 
   return (
     <Head>

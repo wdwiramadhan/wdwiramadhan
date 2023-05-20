@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
 import { useRouter } from "next/router";
-import clsx from "clsx";
 import { BasicLink } from "./BasicLink";
 
 import { MoonIcon, SunIcon } from "@heroicons/react/outline";
@@ -11,45 +10,39 @@ type LinkType = {
   label: string;
 };
 
-function Nav() {
-  const router = useRouter();
-  const links: Array<LinkType> = [
-    { href: "/", label: "Home" },
-    { href: "/blog", label: "Blog" },
-    { href: "/about", label: "About" },
-  ];
-
-  return (
-    <nav>
-      <ul className="text-md flex space-x-4 font-medium text-gray-800 dark:text-gray-100 md:space-x-6 ">
-        {links.map((link: LinkType, idx) => (
-          <li key={idx}>
-            <BasicLink href={link.href} isActive={router.asPath === link.href}>
-              {link.label}
-            </BasicLink>
-          </li>
-        ))}
-      </ul>
-    </nav>
-  );
-}
+const links: Array<LinkType> = [
+  { href: "/", label: "Home" },
+  { href: "/blog", label: "Blog" },
+  { href: "/about", label: "About" },
+];
 
 export function Header() {
   const [mounted, setMounted] = useState<boolean>(false);
-  const [theme, setTheme] = useTheme();
+  const { theme, setTheme } = useTheme();
+  const router = useRouter();
 
   useEffect(() => {
     setMounted(true);
   }, []);
 
   return (
-    <header className="w-full py-8 transition-shadow">
+    <header className="w-full py-3 transition-shadow  md:py-6">
       <div className="container mx-auto max-w-5xl px-4">
         <div className="flex items-center justify-between">
-          <Nav />
+          <nav className="text-md flex space-x-4 font-medium text-gray-800 dark:text-gray-100 md:space-x-6">
+            {links.map((link: LinkType, index) => (
+              <BasicLink
+                key={index}
+                href={link.href}
+                isActive={router.asPath === link.href}
+              >
+                {link.label}
+              </BasicLink>
+            ))}
+          </nav>
           <button
             onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
-            className="p-2 text-indigo-400"
+            className="p-2 text-gray-800 dark:text-gray-100"
           >
             {mounted && theme === "dark" ? (
               <SunIcon className="h-6 w-6" />

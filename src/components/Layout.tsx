@@ -1,4 +1,4 @@
-import { Header } from "@/components";
+import { Header } from "@/components/Header";
 import { PreloadProvider } from "@/context/PreloadContext";
 
 export function Layout({ children }: { children: React.ReactNode }) {

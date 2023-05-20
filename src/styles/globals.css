@@ -3,10 +3,10 @@
 @tailwind utilities;
 
 [data-fade] {
-  @apply duration-[500ms] opacity-0 transition ease-out translate-y-8 motion-reduce:opacity-100 motion-reduce:translate-y-0;
+  @apply translate-y-8 opacity-0 transition duration-[500ms] ease-out motion-reduce:translate-y-0 motion-reduce:opacity-100;
 }
 .fade-in-start [data-fade] {
-  @apply opacity-100 translate-y-0;
+  @apply translate-y-0 opacity-100;
 }
 .fade-in-start [data-fade="1"] {
   transition-delay: 100ms;
@@ -33,6 +33,6 @@
   transition-delay: 800ms;
 }
 
-.prose p {
-  @apply mb-1;
+.prose {
+  max-width: 50rem;
 }

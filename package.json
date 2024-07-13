@@ -1,6 +1,7 @@
 {
   "name": "wdwiramadhan",
   "private": true,
+  "packageManager": "pnpm@7.16.1",
   "scripts": {
     "dev": "next dev",
     "build": "next build",

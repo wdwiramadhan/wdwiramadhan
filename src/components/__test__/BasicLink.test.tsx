@@ -1,5 +1,5 @@
 import { render, screen } from "test-utils";
-import { BasicLink } from "../BasicLink";
+import BasicLink from "../BasicLink";
 
 describe("Test basic link component", () => {
   it("should render correctly use default props", () => {

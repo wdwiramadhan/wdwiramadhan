@@ -8,7 +8,7 @@ type NextImageProps = {
   imgClassName?: string;
 } & ImageProps;
 
-export function NextImage({
+const NextImage = ({
   src,
   width,
   height,
@@ -16,7 +16,7 @@ export function NextImage({
   className,
   imgClassName,
   ...rest
-}: NextImageProps) {
+}: NextImageProps) => {
   const [isLoaded, setIsLoaded] = useState(false);
 
   return (
@@ -32,4 +32,6 @@ export function NextImage({
       />
     </figure>
   );
-}
+};
+
+export default NextImage;

@@ -1,3 +1,4 @@
+"use client";
 import Link, { LinkProps } from "next/link";
 import clsx from "clsx";
 import React from "react";
@@ -10,7 +11,7 @@ type BasicLinkProps = {
 } & React.ComponentPropsWithoutRef<"a"> &
   LinkProps;
 
-export function BasicLink({
+const BasicLink = ({
   children,
   href,
   isNewTab = false,
@@ -18,10 +19,10 @@ export function BasicLink({
   isActive = false,
   className,
   ...rest
-}: BasicLinkProps) {
+}: BasicLinkProps) => {
   const style = clsx(
-    !isActive && "hover:text-indigo-400 text-gray-600 dark:text-gray-400",
-    isActive && "text-indigo-400 dark:text-indigo-400",
+    !isActive && "hover:text-indigo-400 text-gray-400",
+    isActive && "text-indigo-400",
     className
   );
 
@@ -44,4 +45,6 @@ export function BasicLink({
       {children}
     </a>
   );
-}
+};
+
+export default BasicLink;

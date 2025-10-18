@@ -28,7 +28,7 @@ jobs:
         run: pnpm install
 
       - name: Run Eslint
-        run: npm run lint
+        run: pnpm run lint
 
       - name: Run Unit Test
-        run: npm run test
+        run: pnpm run test

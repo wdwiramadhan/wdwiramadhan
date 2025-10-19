@@ -28,6 +28,6 @@
     }
   },
   "files": {
-    "includes": ["**"]
+    "includes": ["src/**"]
   }
 }

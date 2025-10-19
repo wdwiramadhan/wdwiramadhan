@@ -8,10 +8,9 @@
     "build": "vite build",
     "preview": "vite preview",
     "test": "vitest",
-    "lint": "biome check",
-    "lint:fix": "biome check --write",
     "format": "biome format",
-    "format:fix": "biome format --write"
+    "format:fix": "biome format --write",
+    "lint": "biome check"
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.1.14",
